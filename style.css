@@ -1,37 +1,51 @@
-:root{
---cor-fundo: #222 ;
---cor-principal: #050d5a ;
---cor-secundaria: #3148f5;
---cor-destaque: #2BDEFD;
---cor-texto: #e0f005;
-}
-body {
-background-color: var(--cor-fundo);
-color: var(--cor-texto);
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-}
-.caixa-principal{
-background-color: var(--cor-principal);
-width: 90%;
-max-width: 600px;
-text-align: center;
-padding: 20px;
+:root {
+  --cor-fundo: #0b3d0b;       /* verde escuro */
+  --cor-principal: #1a5e1a;   /* verde médio */
+  --cor-secundaria: #4caf50;  /* verde vibrante */
+  --cor-destaque: #81c784;    /* verde claro */
+  --cor-texto: #dcedc8;       /* verde muito claro */
 }
 
-h1{
-color: var(--cor-destaque);
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--cor-secundaria);
+}
+
+h1 {
+  color: var(--cor-destaque);
+  margin-bottom: 20px;
+}
+
 button {
-background-color: var(--cor-secundaria);
-color: var(--cor-texto);
-border: none;
-border-radius: 15px;
-padding: 15px;
-transition: background-color 0.3s;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
 }
-button:hover{
-background-color: var(--cor-destaque);
-color: var(--cor-principal);
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo);
+}
